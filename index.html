@@ -9,19 +9,54 @@
     <title>Guess the number</title>
   </head>
   <body>
+    <!-- Main Wrapper -->
     <div class="wrapper">
+      <!-- Introduction -->
       <div class="block introduction">
         <span>Guess the number</span>
+        <br />
+        <p>betwen 0 and 30</p>
       </div>
+      <!-- Secret Number -->
       <div class="block secret_number">?</div>
-      <div class="block input">
-        <input type="number" />
-      </div>
+      <!-- Display Messages -->
+      <div class="block message">🤔 So, what's your number?</div>
+      <!-- Checking Number -->
       <div class="block check">
-        <button>Check</button>
+        <input type="number" class="input_number" />
+        <br />
+        <button class="button_check">Check</button>
       </div>
-      <div class="block lives"></div>
-      <div class="block highscore"></div>
+      <!-- Lives Bar-->
+      <span>lives</span>
+      <div class="block lives">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <!-- Highscores Bar-->
+      <span>highscore</span>
+      <div class="block highscore">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
     </div>
   </body>
 </html>
