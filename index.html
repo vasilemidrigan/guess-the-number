@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Guess the number</title>
@@ -14,7 +21,6 @@
       <!-- Introduction -->
       <div class="block introduction">
         <span>Guess the number</span>
-        <br />
         <p>betwen 0 and 30</p>
       </div>
       <!-- Secret Number -->
@@ -27,35 +33,18 @@
         <br />
         <button class="button_check">Check</button>
       </div>
+      <div class="restart">
+        <button class="restart_button">restart</button>
+      </div>
       <!-- Lives Bar-->
       <span>lives</span>
       <div class="block lives">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <span class="lives_count">20</span>
       </div>
       <!-- Highscores Bar-->
       <span>highscore</span>
       <div class="block highscore">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <span class="highscore_count">0</span>
       </div>
     </div>
   </body>
