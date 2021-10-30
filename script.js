@@ -1,5 +1,5 @@
 /* Variables */
-const secretNumber = Math.floor(Math.random() * 30 + 1);
+let secretNumber = Math.floor(Math.random() * 30 + 1);
 console.log("secretNumber:", secretNumber);
 const buttonCheck = document.querySelector(".button_check");
 let livesCountTextContent = document.querySelector(".lives_count").textContent;
@@ -28,7 +28,11 @@ buttonCheck.addEventListener("click", function () {
       document.querySelector(".wrapper").style.backgroundColor = "purple";
       document.querySelector(".secret_number").textContent = secretNumber;
       document.querySelector(".input_number").value = "";
-      document.querySelector(".highscore_count").textContent = score;
+      if(document.querySelector(".highscore_count").textContent < document.querySelector(".lives_count").textContent) {
+        document.querySelector(".highscore_count").textContent 
+        = document.querySelector(".lives_count").textContent;
+      }
+      
     }
   } else {
     displayMessage("😈 Game Over!");
@@ -37,6 +41,8 @@ buttonCheck.addEventListener("click", function () {
 /* Restart */
 const restart = document.querySelector(".restart_button");
 restart.addEventListener("click", function () {
+  secretNumber = Math.floor(Math.random() * 30 + 1)
+  console.log("secretNumber:", secretNumber);
   document.querySelector(".wrapper").style.backgroundColor = "#630a10";
   document.querySelector(".secret_number").textContent = "?";
   displayMessage("🤡 Another one?");
